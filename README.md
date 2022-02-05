@@ -7,5 +7,6 @@ The mission getting close to O(1)
 <p>https://leetcode.com/problems/maximum-average-subarray-i/
 
 Runtime: 88 ms, faster than 98.39% of JavaScript online submissions for Maximum Average Subarray I.
-Memory Usage: 55 MB, less than 15.66% of JavaScript online submissions for Maximum Average Subarray I.</P
+Memory Usage: 55 MB, less than 15.66% of JavaScript online submissions for Maximum Average Subarray I.
+</p>
 
