@@ -73,46 +73,42 @@
 //   }
 //   return max;
 // }
+
 // function findMaxAverage(nums, k) {
 //   if (nums.length === 1) return nums[0];
-//   var max = -4000,
-//     sum = 0,
-//     count = 0,
+//   var max = -Infinity,
 //     i = 0,
-//     z = 0;
-// //stop on i=6
-//   while (i < nums.length) {
-//     count++;
-//     sum += nums[i];
-//     if (count >= k) {
-//       max = Math.max(max, sum / k);
-//       sum = sum - nums[z];
-//       z++;
-//     }
-//     i++;
-//   }
-//   return max;
+//     sum = 0;
 
-//   //O(1)
+//   while (i < nums.length) {
+//     sum += nums[i];
+//     i++;
+//     if (i >= k) {
+//       max = Math.max(max, sum);
+//       sum = sum - nums[i - k];
+//     }
+//   }
+//   return max / k;
 // }
 
 function findMaxAverage(nums, k) {
-  if (nums.length === 1) return nums[0];
-  var max = -4000,
-    i = 0,
-    sum = 0;
-
-  while (i < nums.length) {
+  let sum = 0,
+    n = nums.length;
+  //stops on 4
+  for (var i = 0; i < k; i++) {
     sum += nums[i];
-
-    i++;
-    if (i >= k) {
-      max = Math.max(max, sum / k);
-      sum = sum - nums[i - k];
-    }
   }
-  return max;
+  var i = 0,
+    //4
+    j = k,
+    max = sum;
+  while (j < n) {
+    sum = sum - nums[i++];
+    sum = sum + nums[j++];
+    max = Math.max(sum, max);
+  }
+  return max / k;
 }
 
-console.log(findMaxAverage([3, 3, 4, 3, 0], 3));
+console.log(findMaxAverage([1, 12, -5, -6, 50, 3], 4));
 //Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
