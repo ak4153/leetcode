@@ -1,4 +1,6 @@
-# leetcode
+<img src="https://adrianmejia.com/images/time-complexity-examples.png"/>
+
+# leetcode/ codewars
 leetcode submissions
 
 The mission getting close to O(1)
