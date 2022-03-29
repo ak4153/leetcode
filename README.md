@@ -1,8 +1,9 @@
 <img src="https://adrianmejia.com/images/time-complexity-examples.png"/>
 
 # leetcode/ codewars
-leetcode submissions
 
+leetcode and code war submissions
+using TS/JS
 The mission getting close to O(1)
 
 <h6>findMaxAverage </6>
@@ -10,6 +11,7 @@ The mission getting close to O(1)
 
 Runtime: 88 ms, faster than 98.39% of JavaScript online submissions for Maximum Average Subarray I.
 Memory Usage: 55 MB, less than 15.66% of JavaScript online submissions for Maximum Average Subarray I.
+
 </p>
 
 <h6>longestNiceSubString</6>
@@ -18,4 +20,3 @@ Memory Usage: 55 MB, less than 15.66% of JavaScript online submissions for Maxim
   Runtime: 126 ms, faster than 67.65% of JavaScript online submissions for Longest Nice Substring.
 Memory Usage: 47.5 MB, less than 24.51% of JavaScript online submissions for Longest Nice Substring.
   </p>
-
